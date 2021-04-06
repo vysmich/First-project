@@ -1,0 +1,29 @@
+footer {
+
+    background-color: $secondary-color;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+
+
+    }
+    p{
+        margin: 0.5em 0;
+        color: $main-color
+    }
+    a{
+        padding-left: .7em;
+    }
+    p:last-child{
+        margin-bottom: 2em;
+    }
+    .logo{
+        margin-top: 0.8em;
+    }
+}
+    
+

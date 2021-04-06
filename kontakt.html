@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <script src="https://kit.fontawesome.com/527212937a.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            // Initialize and add the map
+            function initMap() {
+                const headquarters = { lat: 48.94694216687132,  lng: 17.46180662794372};
+                const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: headquarters,
+                });
+                const marker = new google.maps.Marker({
+                position: headquarters,
+                map: map,
+                });
+            }
+    </script>    
+    <style>
+        .no-js {
+          visibility: visible;
+        }
+      </style>
+    <title>Kontakt</title>
+    </head>
+    
+    <body style="visibility: hidden;" class="no-js">
+        <script>
+            document.querySelector('body').classList.remove('no-js');
+        </script>
+       
+        <header class="header group">
+            <div class="contact-bar">
+                <p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <a href="tel: 77778971" class="phone">77778971</a>
+                </p>
+    
+                    <p>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto: vyskocil@zamecnictvi.cz" class="mail">vyskocil@zamecnictvi.cz</a>
+                    </p>
+            </div>
+            <div class="logo">
+               
+                <a href="index.html" class="logo">
+                    <img src="/img/Logo-white.png" alt="dvoukridla brana s elektrickým pohonem" />
+                    
+                </a>
+            </div>
+            <nav>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"
+                    ><span class="navicon"></span
+                ></label>
+                <ul class="menu">
+                    <li><a href="index.html">Domů</a></li>                    <li><a href="brany.html">Brány a ploty</a></li>
+                    <li><a href="schody.html">Schodiště</a></li>
+                    <li><a href="zabradli.html">Zábradlí</a></li>
+                    <li><a href="ostatni.html">Ostatní</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+             </nav>
+        </header>
+
+        <main>
+            <section class="contacts">
+                <article>
+                    <div class="container">
+                        <header>
+                            <h1>Kontakt</h1>
+                            
+                            
+                        </header>
+                        <div class="container ">
+                                <ul class="contact-list">
+                                    <li>
+                                        <i class="fas fa-mobile-alt"></i>
+                                        Můžete nám zavolat nebo napsat:
+                                        </li>
+                                    <li>
+                                        <a href="tel: 77778971" class="phone">777 789 71</a></li>
+                                    <li>
+                                        <a href="mailto: vyskocil@zamecnictvi.cz" class="mail">vyskocil@zamecnictvi.cz</a>
+                                    </li>
+                                </ul>
+                                    
+                                </div>
+                    
+                                <ul class="contact-list">
+                                    <li><i class="fas fa-address-card"></i>Sídlo a fakturační údaje:</li>
+                                    <li>Milan Vyskočil</li>
+                                    <li>Blatnice pod Svatým Antonínkem 802, 696 71</li>
+                                    <li>IČO:64484173</li>
+                                    <li>Fyzická osoba zapsaná v Živnostenském rejstříku ve Veselí nad Moravou od 18.07.1996
+                                    </li>
+                                    
+                                </ul>
+                    </div>
+                    
+                    <div id="map"></div>
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0pzusbCbx04jRRzQeh8qxtsaZgyvItHk
+                        &callback=initMap&libraries=&v=weekly"
+                        async>
+                    </script>
+                  
+                   
+
+                </article>
+
+
+
+
+            </section>
+
+            <section class="contact-form" id="contact-form">
+                <div class="container">
+                <h2>Kontaktujte nás</h2>
+                <form action="https://formsubmit.co/vysmich@gmail.com" method="POST">
+                    <div class="flex">
+                        <input type="text" name="jmeno" placeholder="Jméno" required>
+                        <input type="text" name="prijmeni" placeholder="Příjmení" required>
+                    </div>
+                   
+                    <div class="flex">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="telefon" placeholder="Telefon">
+                    </div>
+                    <textarea name="zprava" id="" cols="30" rows="7" placeholder="Vaše zpráva"></textarea>
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://facebook.com">
+                    <a href="ochrana-udaju.html">Informace o ochraně  osobních údajů</a>
+                    <button type="submit">Odeslat</button>
+               </form>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container ">
+                <a href="" class="logo">
+                    <img src="/img/Logo-white.png" alt="" />
+                </a>
+                    <p>
+                        <i class="fas fa-mobile-alt"></i>
+                        <a href="tel: 77778971" class="phone">77778971</a>
+                    </p>
+    
+                    <p>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto: vyskocil@zamecnictvi.cz" class="mail">vyskocil@zamecnictvi.cz</a>
+                    </p>
+            </div>
+
+        </footer>
+        <script  src="main.js"></script>
+
+    </body>
+</html>
