@@ -2,41 +2,36 @@
     color: $font-color2;
     text-align: center;
     margin-bottom: 2em;
-    a{
+    a {
         color: $font-color2;
         text-decoration: underline;
     }
-   input,
-   button,
-   textarea{
-       background-color: #fff;
-       border: none;
-       width: 100%;
-       padding: .6em 1.1em;
-       margin: .6em;
-       border-radius: 4px;
-       border: solid 1px $secondary-color;
-       
-   }
-   button{
-       background-color: $main-color;
-       color: $font-color;
-       transition: 0.3s ease-in-out;
-   }
- 
-  
- 
+    input,
+    button,
+    textarea {
+        background-color: #fff;
+        border: none;
+        width: 100%;
+        padding: 0.6em 1.1em;
+        margin: 0.6em;
+        border-radius: 4px;
+        border: solid 1px $secondary-color;
+    }
+    button {
+        background-color: $main-color;
+        color: $font-color;
+        transition: 0.3s ease-in-out;
+    }
 }
 
-  @media  screen and (min-width: 45em){
-      .contact-form{
+@media screen and (min-width: 45em) {
+    .contact-form {
         textarea,
-        button{
-            width:97.5%
-      }
-      h2{
-          font-size: 1.9em;
-      }
-    
+        button {
+            width: 97.5%;
+        }
+        h2 {
+            font-size: 1.9em;
+        }
     }
-  }
+}

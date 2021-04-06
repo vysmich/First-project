@@ -1,41 +1,40 @@
 .products,
 .contacts,
-.gdpr{
+.gdpr {
     color: $font-color2;
     text-align: center;
     font-size: 1.5em;
     padding-top: 0;
-    h1{
+    h1 {
         font-size: 1.6em;
-        margin: .8em;
+        margin: 0.8em;
     }
-   
-    .container{
+
+    .container {
         margin-bottom: 3em;
     }
-    .gallery{
-        a{
+    .gallery {
+        a {
             display: inline-block;
             overflow: hidden;
             font-size: 0;
         }
         column-count: 2;
-        column-gap: .3em;
+        column-gap: 0.3em;
 
-        img{
-            width: 100% ;
-            height: auto ;
+        img {
+            width: 100%;
+            height: auto;
         }
-        img:hover{
-        transition: .3s ease-in-out;
-        transform: scale(1.05);
-    }
-        
+        img:hover {
+            transition: 0.3s ease-in-out;
+            transform: scale(1.05);
+        }
     }
 }
 
-#overlay{
-    background-color: rgba($color: #000000, $alpha: .7);
+#overlay {
+    background-color: rgba($color: #000000, $alpha: 0.7);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -47,7 +46,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 #overlay img {
     border: 5px solid white;
@@ -55,27 +53,31 @@
     max-width: 80%;
     width: auto;
     border-radius: 5px;
-
 }
 
-
-.animate{
-    animation: view .9s ease-in-out;
+.animate {
+    animation: view 0.9s ease-in-out;
     @keyframes view {
-        0%   { opacity: 0; }
-        100% { opacity: 1; }
-        
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
-.animate-two{
-    animation: view-two .9s ease-in-out;
+.animate-two {
+    animation: view-two 0.9s ease-in-out;
     @keyframes view-two {
-        0%   { opacity: 0; }
-        100% { opacity: 1; }
-        
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
-.controls{
+.controls {
     font-size: 1em;
     width: 100%;
     height: 100%;
@@ -83,44 +85,41 @@
     color: white;
 }
 
-.fa-times{
+.fa-times {
     position: absolute;
     top: 2%;
     right: 2%;
 }
-.fa-arrow-left{
+.fa-arrow-left {
     position: absolute;
     top: 50%;
     left: 2%;
 }
-.fa-arrow-right{
+.fa-arrow-right {
     position: absolute;
     top: 50%;
     right: 2%;
 }
 
 .fa-arrow-left:hover,
-.fa-arrow-right:hover{
-    transition: .3s ease-in-out;
-        transform: scale(1.20);
-        cursor: pointer;
-}
-.fa-times:hover{
-    transition: 0.5s ease-in-out;
-    transform: rotate(90deg) ;
+.fa-arrow-right:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
     cursor: pointer;
-   
 }
-@media  screen and (min-width: 45em){
-    .controls{
+.fa-times:hover {
+    transition: 0.5s ease-in-out;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+@media screen and (min-width: 45em) {
+    .controls {
         font-size: 2em;
     }
-    .products{
-        .gallery{
+    .products {
+        .gallery {
             margin-top: 2em;
             column-count: 4;
+        }
     }
-   
-      
-    }
-    }
+}

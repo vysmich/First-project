@@ -1,29 +1,23 @@
 footer {
-
     background-color: $secondary-color;
-    .container{
+    .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
         text-align: center;
-
-
-
     }
-    p{
+    p {
         margin: 0.5em 0;
-        color: $main-color
+        color: $main-color;
     }
-    a{
-        padding-left: .7em;
+    a {
+        padding-left: 0.7em;
     }
-    p:last-child{
+    p:last-child {
         margin-bottom: 2em;
     }
-    .logo{
+    .logo {
         margin-top: 0.8em;
     }
 }
-    
-

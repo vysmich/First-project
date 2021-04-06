@@ -1,42 +1,36 @@
-.about-subheader{
+.about-subheader {
     margin-bottom: 1.5em;
 }
-.about-list{
-    
+.about-list {
     list-style: none;
     text-align: center;
     position: relative;
-    i{
+    i {
         font-size: 1em;
         margin-right: 1em;
         color: $main-color;
     }
-    li{
-        position:relative ;
+    li {
+        position: relative;
         left: -1.2em;
         margin-bottom: 1.2em;
     }
-  
 }
-.about-img{
+.about-img {
     margin-top: 2em;
 }
 
-@media  screen and (min-width: 34em){
-    .about-list{
-        display:flex;
+@media screen and (min-width: 34em) {
+    .about-list {
+        display: flex;
         justify-content: space-around;
         text-align: left;
         flex-wrap: nowrap;
-      
-   
     }
 }
 
-@media  screen and (min-width: 42em){
-    
-      
-    li{
+@media screen and (min-width: 42em) {
+    li {
         font-size: 1.2em;
     }
-    }
+}

@@ -1,17 +1,17 @@
-.for-you{
+.for-you {
     color: $font-color2;
     text-align: center;
     position: relative;
-    
-    i{
+
+    i {
         color: $main-color;
         font-size: 1.5em;
     }
-    article{
+    article {
         margin-right: 0;
     }
-    
-    .plus{
+
+    .plus {
         color: $main-color;
         font-size: 4em;
         position: relative;
@@ -19,75 +19,68 @@
         content: ("+");
         display: flex;
         justify-content: center;
-        animation: jump 10s  infinite ;
+        animation: jump 10s infinite;
         cursor: pointer;
 
-        
-        
-        @keyframes jump{
+        @keyframes jump {
             0% {
-                transform: scale(1);    
-              }
+                transform: scale(1);
+            }
 
             5% {
-                transform:scale(1.3);
+                transform: scale(1.3);
             }
-            10%{
-                transform:scale(1);
+            10% {
+                transform: scale(1);
             }
             15% {
-                transform:scale(1.3);
+                transform: scale(1.3);
             }
-            20%{
-                transform:scale(1);
+            20% {
+                transform: scale(1);
             }
-            100%{
-                transform: scale(1);    
-
+            100% {
+                transform: scale(1);
             }
         }
-
     }
-    .plus:hover{
+    .plus:hover {
         transform: rotate(30 deg);
     }
-    .show{
-        transition: max-height .5s ease-in-out;
+    .show {
+        transition: max-height 0.5s ease-in-out;
         max-height: 500px;
         animation: show 2.5s;
-        @keyframes  show {
-            0% { opacity: 0;}
-            100% {opacity: 1;}
+        @keyframes show {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
-     
-
     }
-    .deactive{
-        transition: max-height .5s ease-in-out;
+    .deactive {
+        transition: max-height 0.5s ease-in-out;
         max-height: 0;
         overflow: hidden;
     }
 }
 
-
-
-.secondary-menu{
+.secondary-menu {
     text-align: center;
-    h2{
+    h2 {
         color: $font-color2;
         margin-bottom: 0;
     }
 
-    article{
+    article {
         position: relative;
         margin-top: 3em;
-        
-
     }
-    
-    h3 
-     {
-       display: block;
+
+    h3 {
+        display: block;
         position: absolute;
         bottom: 0%;
         left: 0%;
@@ -99,51 +92,45 @@
         font-weight: normal;
         font-size: 1.2em;
         overflow: hidden;
-
-       
     }
 
-    img{
+    img {
         width: 100%;
         border-radius: 6px;
-        
     }
-    article:hover{
-        transition: .3s ease-in-out;
+    article:hover {
+        transition: 0.3s ease-in-out;
         transform: scale(1.05);
     }
 }
 
-.prefooter{
+.prefooter {
     text-align: center;
     color: $font-color2;
 }
-@media  screen and (min-width: 34em){
-    .for-you article{
+@media screen and (min-width: 34em) {
+    .for-you article {
         font-size: 1.2em;
     }
 }
 
-@media  screen and (min-width: 45em){
+@media screen and (min-width: 45em) {
     .for-you h2,
-    .secondary-menu h2{
+    .secondary-menu h2 {
         font-size: 1.9em;
     }
-    .flex{
-        display:flex;
-        
-       
+    .flex {
+        display: flex;
     }
     .for-you {
-        
-        .flex{
-        justify-content: space-around;
+        .flex {
+            justify-content: space-around;
+        }
+        article {
+            padding-left: 1em;
+        }
     }
-    article{
-        padding-left: 1em;
-    }
-}
-   .secondary-menu article:first-child{
+    .secondary-menu article:first-child {
         margin-right: 2em;
     }
 }
