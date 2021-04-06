@@ -73,12 +73,7 @@ module.exports = {
       chunks: ['brany'],
       filename: 'brany.html'
     }),
-    new HtmlWebpackPlugin({
-      template: './o-nas.html',
-      inject: true,
-      chunks: ['o-nas'],
-      filename: 'o-nas.html'
-    }),
+   
     new HtmlWebpackPlugin({
       template: './ochrana-udaju.html',
       inject: true,
