@@ -31,7 +31,7 @@
 
     .container {
         line-height: 1.15;
-        font-size: 88%;
+        font-size: 77%;
         color: $font-color2;
         background-color: rgba($font-color, $alpha: 0.75);
         position: absolute;
@@ -48,6 +48,13 @@
     }
 }
 
+@media screen and (min-width: 20em) {
+    .carousel {
+        .container {
+            top: 24%;
+        }
+    }
+}
 @media screen and (min-width: 34em) {
     .carousel {
         font-size: 1em;

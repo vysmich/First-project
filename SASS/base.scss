@@ -115,3 +115,8 @@ section {
 .error-btn {
     display: block;
 }
+@media screen and (max-width: 20em) {
+    body {
+        font-size: 70%;
+    }
+}  
