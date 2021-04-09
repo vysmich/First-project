@@ -68,7 +68,7 @@ gallery.forEach((image) => {
             }
         });
 
-        //Swipe gallery in
+        //Swipe gallery for mobile 
         document.addEventListener('swipeleft',function(){
             prevPicture();
         })
