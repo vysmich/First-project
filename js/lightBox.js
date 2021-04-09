@@ -66,8 +66,18 @@ gallery.forEach((image) => {
             } else if (e.keyCode == 37 && !(imgNum <= 0)) {
                 prevPicture()
             }
+        });
+
+        //Swipe gallery in
+        document.addEventListener('swipeleft',function(){
+            prevPicture();
+        })
+        document.addEventListener('swiperight',function(){
+            nextPicture();
         })
 
+
+        
         //close gallery
 
         close.onclick = () => {
@@ -76,3 +86,5 @@ gallery.forEach((image) => {
         }
     }
 })
+
+
