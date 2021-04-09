@@ -20,7 +20,7 @@
     margin-top: 2em;
 }
 
-@media screen and (min-width: 34em) {
+@media screen and (min-width: 42em) {
     .about-list {
         display: flex;
         justify-content: space-around;
@@ -29,7 +29,8 @@
     }
 }
 
-@media screen and (min-width: 42em) {
+
+@media screen and (min-width: 34em) {
     li {
         font-size: 1.2em;
     }
