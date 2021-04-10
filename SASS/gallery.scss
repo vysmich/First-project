@@ -56,7 +56,7 @@
 }
 
 .animate {
-    animation: view 1.5s ease-in-out;
+    animation: view 1s ease-in-out;
     @keyframes view {
         0% {
             opacity: 0;
@@ -67,7 +67,7 @@
     }
 }
 .animate-two {
-    animation: view-two 1.5s ease-in-out;
+    animation: view-two 1s ease-in-out;
     @keyframes view-two {
         0% {
             opacity: 0;

@@ -3,11 +3,29 @@ let overlay = document.querySelector("#overlay");
 let close = document.querySelector(".fa-times");
 let prev = document.querySelector(".fa-arrow-left");
 let next = document.querySelector(".fa-arrow-right");
+let imgPreload = [];
+
+//preload gallery
+if (gallery) {
+    let preload = () => {
+        
+        for (let i = 0; i < gallery.length; i++) {
+            let preloadSrc = gallery[i].getAttribute("href");
+            let preloadPic = document.createElement("img");
+            preloadPic.setAttribute("src", preloadSrc);     
+            imgPreload.push(preloadPic);
+        }
+    };
+
+    preload();
+}
+
+
+
 
 gallery.forEach((image) => {
     image.onclick = function (event) {
         //function for displaying arrows
-        console.log(gallery);
         let hideArrow = () => {
             if (imgNum >= gallery.length - 1) {
                 next.style.display = "none";
@@ -72,13 +90,14 @@ gallery.forEach((image) => {
 
         //Swipe gallery for mobile
         document.addEventListener("swipeleft", function () {
-            if (!(imgNum <= 0)) {
-                prevPicture();
-            }
-        });
-        document.addEventListener("swiperight", function () {
             if (!(imgNum >= gallery.length - 1)) {
                 nextPicture();
+            }
+            
+        });
+        document.addEventListener("swiperight", function () {
+            if (!(imgNum <= 0)) {
+                prevPicture();
             }
         });
 
@@ -89,20 +108,7 @@ gallery.forEach((image) => {
             overlay.style.display = "none";
         };
 
-        //preload gallery
-        let preload = () => {
-            let imgPreload = [];
-            for (let i = 0; i < gallery.length; i++) {
-                let preloadSrc = gallery[i].getAttribute("href");
-                let preloadPic = document.createElement("img");
-                preloadPic.setAttribute("src", preloadSrc);     
-                imgPreload.push(preloadPic);
-                console.log(imgPreload);
-                
-            }
-        };
-        if(document.querySelector("#overlay img")){
-        preload();}
+        
 
     };
 });
