@@ -70,10 +70,14 @@ gallery.forEach((image) => {
 
         //Swipe gallery for mobile 
         document.addEventListener('swipeleft',function(){
-            prevPicture();
+            if (!(imgNum <= 0)) {
+                prevPicture();
+            }
         })
         document.addEventListener('swiperight',function(){
-            nextPicture();
+            if (!(imgNum >= gallery.length - 1)) {
+                nextPicture();
+                }
         })
 
 
