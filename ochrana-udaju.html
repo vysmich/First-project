@@ -12,11 +12,19 @@
             href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap"
             rel="stylesheet"
         />
+        <style>
+            .no-js {
+                visibility: visible!important;
+            }
+        </style>
         <link rel="stylesheet" href="style.css" />
         <script defer src="main.js"></script>
         <title>Document</title>
     </head>
-    <body>
+    <body style="visibility: hidden" class="no-js">
+        <script>
+            document.querySelector("body").classList.remove("no-js")
+        </script>
         <header class="header group">
             <div class="contact-bar">
                 <p>
