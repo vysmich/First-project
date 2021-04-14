@@ -19,7 +19,7 @@
         content: ("+");
         display: flex;
         justify-content: center;
-        animation: jump 10s infinite;
+        animation: jump 5s infinite;
         cursor: pointer;
 
         @keyframes jump {
@@ -127,7 +127,7 @@
             justify-content: space-around;
         }
         article {
-            max-width: 33%;
+            max-width: 30%;
         }
     }
     .secondary-menu article:first-child {
