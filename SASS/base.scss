@@ -94,8 +94,8 @@ section {
 .gdpr {
     text-align: left;
     line-height: 2;
-    ul{
-        font-size: .8em;
+    ul {
+        font-size: 0.8em;
     }
 }
 
@@ -119,4 +119,9 @@ section {
     body {
         font-size: 70%;
     }
-}  
+}
+@media (min-width: 1400px) {
+    .container {
+        margin: 0 auto;
+    }
+}
